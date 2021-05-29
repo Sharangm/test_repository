@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.3)), url('../tree.png');
+    height: 120vh;
+    background-size: cover;
+    background-position: left;
+    background-attachment: scroll;
+}
+ul{
+    list-style-type: none;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 20px;
+    border: 1px transparent;
+}
+
+ul li a:hover{
+    background-color: #555555;
+    border-style: ridge;
+    border-color: blanchedalmond;   
+    border-width: 2px; 
+    transition-duration: 0.4s;
+    transition: 0.2s ease-out;
+}
+
+ul li.current a{
+    background-color: #ffffff;
+    color: #444444;
+}
+
+.logo img{
+    float: right;
+    width: 150px;
+    height: auto;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    color: #ffffff;
+    font-size: 80px;
+    font-family: roboto
+}
+
+.button{
+    position:absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.b{
+    color: #efefef;
+    background: transparent;
+    border: 1px solid transparent;
+    padding: 20px 30px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.b:hover{
+    color: #4d4d4f;
+    background: rgba(255, 240, 31, 0.98);
+    box-shadow: 0 0 10px rgba(255, 240, 31, 0.98),0 0 40px rgba(255, 240, 31, 0.98),0 0 80px rgba(255, 240, 31, 0.98);
+    transition-delay: 0.35s;
+}  
+
+.b span{
+    position: absolute;
+    display: block;
+}
+
+.b span:nth-child(1){
+    top: -10px;
+    left: 0%;
+    width: 30%;
+    height: 4px;
+    background: linear-gradient(90deg,transparent,transparent);
+}
+
+.b:hover span:nth-child(1){
+    left: 68%;
+    transition: 0.5s;
+    background: linear-gradient(90deg,transparent,rgba(255, 240, 31, 0.98));
+
+}
+
+.b span:nth-child(3){
+    bottom: -10px;
+    right: 0%;
+    width: 30%;
+    height: 4px;
+    background: linear-gradient(270deg,transparent,transparent);
+}
+
+.b:hover span:nth-child(3){
+    right: 68%;
+    transition: 0.5s;
+    background: linear-gradient(270deg,transparent,rgba(255, 240, 31, 0.98));
+    transition-delay: 0s;
+
+}
+
+/* .airplane{
+    width: 100%;
+    height: ;
+    float: left;
+}
+
+.ap img{
+    width: 150px;
+    height: auto;
+} */
